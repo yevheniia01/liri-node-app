@@ -4,6 +4,6 @@
 * find events with your favorite artist
 * search info about your favorite movie
 ## **LIRI** commands: 
-* 'spotify-this-song ```javascript <your song name>'``` : to search for your song
-* 'movie-this <your movie>' : to search for your movie
-* 'concert-this <name of your favorite band>' : to search for events  
+* ```'spotify-this-song <your song name>'``` : to search for your song
+* ```'movie-this <your movie>'``` : to search for your movie
+* ```'concert-this <name of your favorite band>'``` : to search for events  
