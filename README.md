@@ -11,3 +11,4 @@
 * ```'movie-this <your movie>'``` : to search for your movie
 * ```'concert-this <name of your favorite band>'``` : to search for events  
 * ````'do-what-it-says'````: Just try this
+# Please open screenshots folder to see what Liri does 
