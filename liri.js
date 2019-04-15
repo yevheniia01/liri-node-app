@@ -11,13 +11,13 @@
    id: "c5987c6f148b4651ad0beb36bfb11a6a",
    secret: "2ce328cfaf3445e7b3038c48621667b8"
 });
+let command = process.argv[2];
+let secondCommand = process.argv[3];
 //We can search with two words//
 for (var i = 4; i < process.argv.length; i++) {
     secondCommand += '+' + process.argv[i];
 }
 //switch cases
-let command = process.argv[2];
-let secondCommand = process.argv[3];
 switch(command){
     case('spotify-this-song'):
         if(secondCommand){
@@ -75,11 +75,11 @@ function bandintown(artist){
 function omdb(movie){
     axios.get("http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=ddb9dae5&tomatoes=true&r=json").then(
         function(response){
-            //console.log(response)
+           // console.log(response)
             console.log("Movie Title: " + response.data.Title);
             console.log("Year: " + response.data.Year);
             console.log("IMDB Rating: " + response.data.imdbRating);
-            console.log("RottenTomato Rating: " + response.data.tomatoRating);
+            console.log("RottenTomato Rating: " + response.data.Ratings[0].Value);
             console.log("Country: " + response.data.Country);
             console.log("Language: " + response.data.Language);
             console.log("Plot: " + response.data.Plot);
